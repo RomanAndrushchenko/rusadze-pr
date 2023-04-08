@@ -1,0 +1,40 @@
+.header {
+  background-color: #12141d;
+  box-shadow: 0px 0px 48px rgba(6, 28, 61, 0.05);
+  &__iner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    margin: 22px 0;
+  }
+  .list_item {
+    display: flex;
+    color: #838e9e;
+    list-style: none;
+  }
+
+  .list_item li {
+    margin: 0 16px;
+    height: 100%;
+  }
+  li:hover {
+    color: #732df5;
+    cursor: pointer;
+    border-bottom: 1px solid #732df5;
+  }
+  .btn {
+    width: 154px;
+    height: 56px;
+    background: #732df5;
+    border-radius: 7px;
+    border: none;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin: 16px 0;
+  }
+  .btn:hover {
+    cursor: pointer;
+  }
+}
