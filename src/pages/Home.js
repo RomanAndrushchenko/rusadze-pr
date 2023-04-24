@@ -2,8 +2,23 @@ import { Container } from "../shared/components";
 import arrow from "../shared/assets/ArrowRight.png";
 import Styles from "./home.module.scss";
 import Slider from "../components/Slider/Slider";
+import Form from "../components/Form/AddForm";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 
 const Home = () => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [open]);
+
   return (
     <main className={Styles.main}>
       <Container>
@@ -46,10 +61,13 @@ const Home = () => {
             </p>
             <p className={Styles.partners}>Our partners:</p>
           </Container>
-
           <Slider />
+          {createPortal(
+            <Form open={open} onClose={handleClose} />,
+            document.body
+          )}
           <div className={Styles.position_btn}>
-            <button className={Styles.btn}>
+            <button className={Styles.btn} onClick={handleOpen}>
               Contact Us
               <img
                 className={Styles.arrow_right}

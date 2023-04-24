@@ -1,3 +1,4 @@
+import Form from "./components/Form/AddForm";
 import { Layout } from "./layout";
 import Home from "./pages/Home.js";
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <Layout>
       <Home>My page</Home>
+      <Form />
     </Layout>
   );
 }

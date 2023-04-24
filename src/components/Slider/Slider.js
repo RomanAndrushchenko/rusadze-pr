@@ -60,28 +60,25 @@ import Styles from "../Slider/Slider.module.scss";
 import "swiper/scss";
 import "swiper/scss/navigation";
 
-// const NavButtons = () => {
-//   const swiper = useSwiper();
-
-//   const handlePrev = () => {
-//     swiper.slidePrev();
-//   };
-//   const handleNext = () => {
-//     swiper.slideNext();
-//   };
-
-//   return (
-//     <div className={Styles.buttons}>
-//       {swiper.allowSlidePrev && <button onClick={handlePrev}>prev</button>}
-
-//       {swiper.allowSlideNext && <button onClick={handleNext}>next</button>}
-//     </div>
-//   );
-// };
-
 const Slider = () => {
   return (
-    <Swiper navigation={true} modules={[Navigation]} slidesPerView={8}>
+    <Swiper
+      navigation={true}
+      modules={[Navigation]}
+      slidesPerView={8}
+      className={Styles.bla_bla}
+      breakpoints={{
+        1440: {
+          slidesPerView: 8,
+        },
+        1024: {
+          slidesPerView: 6,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+      }}
+    >
       <SwiperSlide className={Styles.slides}>
         <img src={gmb} alt="geroi malogo biznesu" />
       </SwiperSlide>

@@ -1,3 +1,60 @@
-.form {
+.position_form {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  .form {
+    width: 400px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 80px 80px;
+    border-radius: 20px;
+    position: relative;
+
+    .input {
+      display: flex;
+      border: none;
+      background: #d9d9d9;
+      border-radius: 20px;
+      width: 100%;
+      height: 40px;
+      margin: 15px 0;
+      padding: 0 15px;
+    }
+    .label {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 16px;
+      color: #732df5;
+    }
+    .btn_position {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+    }
+    .btn_close {
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      font-weight: 300;
+      cursor: pointer;
+    }
+    .btn_submit {
+      cursor: pointer;
+      border: none;
+      border-radius: 20px;
+      background-color: #732df5;
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      width: 40%;
+      height: 40px;
+      margin: 8% 30%;
+    }
+  }
 }
