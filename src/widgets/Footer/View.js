@@ -28,13 +28,15 @@ const View = () => {
             <div className={Styles.logo}>
               <img src={logo} alt="logo" />
             </div>
-            <img src={fb} alt="fb" />
-            <img src={twitter} alt="twitter" />
-            <img src={linkedin} alt="linkedin" />
-            <img src={instagram} alt="instagram" />
+            <div className={Styles.position_img_social}>
+              <img src={fb} alt="fb" />
+              <img src={twitter} alt="twitter" />
+              <img src={linkedin} alt="linkedin" />
+              <img src={instagram} alt="instagram" />
+            </div>
             <p>© 2023 - Rusadze & Partners</p>
           </div>
-          <nav className={Styles.list_item_info}>
+          <div className={Styles.list_item_info}>
             <p> - Portfolio</p>
             <ul>
               <li>About</li>
@@ -43,7 +45,7 @@ const View = () => {
               <li>Contact</li>
               <li>Pricing Plans</li>
             </ul>
-          </nav>
+          </div>
         </div>
       </Container>
     </footer>

@@ -2,4 +2,12 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  .menu-item {
+    color: white;
+    text-decoration: none;
+  }
+  .menu-item-active {
+    text-decoration: none;
+    color: blue;
+  }
 }

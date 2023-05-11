@@ -1,5 +1,9 @@
-.bla_bla {
-  .slides {
-    text-align: center;
+.slides {
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    img {
+      width: 50%;
+      height: auto;
+    }
   }
 }

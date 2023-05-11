@@ -2,8 +2,11 @@ import { Container } from "../../shared/components";
 import logo from "../../shared/assets/Golio.png";
 import Styles from "./Styles.module.scss";
 import Form from "../../components/Form/AddForm";
+import NavBar from "../../components/Burgermenu/AddBurger";
+
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
+import { NavLink } from "react-router-dom";
 
 const View = () => {
   const [open, setOpen] = useState(false);
@@ -26,17 +29,79 @@ const View = () => {
             <img src={logo} alt="Logo" className={Styles.logo} />
             <nav>
               <ul className={Styles.list_item}>
-                <li>Home</li>
-                <li>About</li>
-                <li>Team</li>
-                <li>Portfolio</li>
-                <li>Services</li>
-                <li>FAQs</li>
+                <li>
+                  <NavLink
+                    style={({ isActive }) => ({
+                      color: isActive ? "#732df5" : "inherit",
+                      textDecoration: isActive ? "underline" : "none",
+                    })}
+                    to="/"
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    style={({ isActive }) => ({
+                      color: isActive ? "#732df5" : "inherit",
+                      textDecoration: isActive ? "underline" : "none",
+                    })}
+                    to="/about"
+                  >
+                    About
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    style={({ isActive }) => ({
+                      color: isActive ? "#732df5" : "inherit",
+                      textDecoration: isActive ? "underline" : "none",
+                    })}
+                    to="/team"
+                  >
+                    Team
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    style={({ isActive }) => ({
+                      color: isActive ? "#732df5" : "inherit",
+                      textDecoration: isActive ? "underline" : "none",
+                    })}
+                    to="/portfolio"
+                  >
+                    Portfolio
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    style={({ isActive }) => ({
+                      color: isActive ? "#732df5" : "inherit",
+                      textDecoration: isActive ? "underline" : "none",
+                    })}
+                    to="/services"
+                  >
+                    Services
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    style={({ isActive }) => ({
+                      color: isActive ? "#732df5" : "inherit",
+                      textDecoration: isActive ? "underline" : "none",
+                    })}
+                    to="/faqs"
+                  >
+                    FAQs
+                  </NavLink>
+                </li>
               </ul>
             </nav>
+
             <button className={Styles.btn} onClick={handleOpen}>
               Contact Us
             </button>
+            <NavBar />
           </div>
         </Container>
       </header>

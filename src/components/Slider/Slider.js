@@ -66,7 +66,6 @@ const Slider = () => {
       navigation={true}
       modules={[Navigation]}
       slidesPerView={8}
-      className={Styles.bla_bla}
       breakpoints={{
         1440: {
           slidesPerView: 8,
@@ -76,6 +75,18 @@ const Slider = () => {
         },
         768: {
           slidesPerView: 4,
+        },
+        425: {
+          slidesPerView: 5,
+          navigation: { enabled: false },
+        },
+        375: {
+          slidesPerView: 5,
+          navigation: { enabled: false },
+        },
+        320: {
+          slidesPerView: 5,
+          navigation: { enabled: false },
         },
       }}
     >

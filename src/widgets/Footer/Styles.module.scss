@@ -5,10 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 40px;
   }
   .contacts_info {
-    width: 25%;
-    margin: 64px 0;
+    width: 27%;
   }
   .email {
     font-size: 24px;
@@ -23,10 +23,13 @@
   }
   .socials {
     text-align: center;
+    width: 45%;
   }
-  .socials img {
-    margin: 0 4px;
+  .position_img_social {
+    display: flex;
+    justify-content: space-between;
   }
+
   .logo {
     margin-bottom: 56px;
   }
@@ -34,16 +37,70 @@
     margin-top: 26px;
     color: #ffffff;
   }
+  .list_item_info {
+    width: 27%;
+  }
   .list_item_info p {
     color: white;
-    padding-left: 40px;
+    padding-left: 20px;
   }
+
   .list_item_info ul li {
     list-style: none;
     color: #838e9e;
-    margin: 4px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .list_item_info ul li:hover {
     cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+    .email {
+      font-size: 14px;
+    }
+    .adress {
+      font-size: 12px;
+    }
+    li {
+      font-size: 12px;
+    }
+    p {
+      font-size: 14px;
+    }
+    img {
+      width: 20%;
+    }
+    .logo {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 424px) {
+    p {
+      font-size: 12px;
+    }
+    .email {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 374px) {
+    .list_item_info p {
+      padding-left: 5px;
+    }
+    p {
+      font-size: 10px;
+    }
+    .email {
+      font-size: 10px;
+    }
+    .adress {
+      font-size: 10px;
+    }
+    .list_item_info li {
+      font-size: 10px;
+    }
+    .list_item_info ul {
+      padding-left: 20px;
+    }
   }
 }

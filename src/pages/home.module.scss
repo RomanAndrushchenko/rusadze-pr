@@ -10,6 +10,7 @@
   .animation_background {
     background-image: url("../shared/assets/ANIMATION.png");
     background-size: 100%;
+    background-repeat: no-repeat;
     position: absolute;
     width: 618px;
     height: 499px;
@@ -83,9 +84,8 @@
   .bng_image {
     background-image: url("../shared/assets/bng.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     background-position: center;
-    height: 847px;
   }
   .content_in_backimage {
     padding-top: 210px;
@@ -114,55 +114,93 @@
   .position_btn {
     display: flex;
     justify-content: center;
+    padding: 15px 0;
   }
   .btn {
-    width: 192px;
-    height: 56px;
-    line-height: 56px;
     background: #732df5;
     border-radius: 7px;
     border: none;
     font-family: "Lexend";
     font-weight: 500;
-    font-size: 17px;
+    font-size: 16px;
     text-transform: capitalize;
     text-align: left;
-    padding-left: 30px;
+    padding: 8px;
     color: #ffffff;
-    position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .arrow_right {
-    position: absolute;
-    top: 30%;
-    right: 15%;
+    padding-left: 10px;
   }
+
   @media screen and (max-width: 1220px) {
     .join_team {
-      width: 45%;
+      font-size: 24px;
+      margin-top: 0;
     }
   }
   @media screen and (max-width: 1220px) {
     .txt_center {
-      width: 95%;
+      width: 100%;
     }
   }
   @media screen and (min-width: 768px) {
     .bng_image {
-      background-size: 150%;
-    }
-    .position_btn {
-      margin-top: 5%;
+      background-size: auto;
     }
   }
-  @media screen and (min-width: 1024px) {
-    .position_btn {
-      margin-top: 8%;
+
+  @media screen and (max-width: 767px) {
+    .animation_background {
+      width: 100%;
+      margin-top: 100px;
     }
-  }
-  @media screen and (min-width: 1440px) {
-    .position_btn {
-      margin-top: 5%;
+    .digital {
+      font-size: 50px;
+    }
+    .brand {
+      font-size: 40px;
+    }
+    .position {
+      margin: 0;
+    }
+    .cases {
+      margin: 0;
+    }
+    .cases div {
+      width: 30%;
+    }
+    .numbers {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .texts {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 0;
+    }
+    .bng_image {
+      width: 100%;
+      height: auto;
+      background-size: auto;
+    }
+    .content_in_backimage {
+      padding: 0;
+    }
+    .your_business {
+      margin: 0;
+      font-size: 36px;
+    }
+    .partners {
+      margin: 15px 0;
+      font-size: 24px;
+    }
+    .txt_center {
+      top: 25%;
     }
   }
 }

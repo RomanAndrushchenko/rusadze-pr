@@ -6,13 +6,12 @@
     justify-content: space-between;
     align-items: center;
   }
-  .logo {
-    margin: 22px 0;
-  }
+
   .list_item {
     display: flex;
     color: #838e9e;
     list-style: none;
+    padding: 0;
   }
 
   .list_item li {
@@ -22,19 +21,30 @@
   li:hover {
     color: #732df5;
     cursor: pointer;
-    border-bottom: 1px solid #732df5;
   }
+
   .btn {
-    width: 154px;
-    height: 56px;
+    height: 3em;
     background: #732df5;
     border-radius: 7px;
     border: none;
     text-transform: capitalize;
     color: #ffffff;
     margin: 16px 0;
+    padding: 0 10px;
   }
   .btn:hover {
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  img {
+    width: 30%;
   }
 }
