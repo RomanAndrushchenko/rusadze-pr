@@ -203,4 +203,9 @@
       top: 25%;
     }
   }
+  @media screen and (min-width: 1024px) {
+    .bng_image {
+      background-size: 100%;
+    }
+  }
 }
